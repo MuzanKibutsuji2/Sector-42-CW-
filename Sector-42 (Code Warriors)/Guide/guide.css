@@ -1,0 +1,182 @@
+.guide-container{
+
+    display:grid;
+
+    grid-template-columns:260px 1fr;
+
+    gap:15px;
+
+    margin-top:20px;
+}
+
+.threat-list{
+
+    background:#090909;
+
+    border:1px solid #222;
+
+    padding:15px;
+}
+
+.panel-header{
+
+    color:#777;
+
+    margin-bottom:15px;
+}
+
+.threat-btn{
+
+    width:100%;
+
+    background:none;
+
+    border:1px solid #222;
+
+    color:#aaa;
+
+    padding:12px;
+
+    text-align:left;
+
+    margin-bottom:10px;
+
+    cursor:pointer;
+
+    font-family:inherit;
+}
+
+.threat-btn:hover{
+
+    border-color:#ffb347;
+
+    color:#ffb347;
+}
+
+.threat-btn.active{
+
+    border-color:#ffb347;
+
+    color:#ffb347;
+}
+
+.guide-panel{
+
+    background:#090909;
+
+    border:1px solid #222;
+
+    padding:20px;
+}
+
+.guide-panel h2{
+
+    color:#ffb347;
+
+    margin-bottom:15px;
+}
+
+.section{
+
+    margin-top:25px;
+}
+
+.section h3{
+
+    color:#777;
+
+    margin-bottom:10px;
+}
+
+.danger{
+
+    display:inline-block;
+
+    padding:8px 15px;
+
+    margin-bottom:20px;
+
+    border:1px solid;
+}
+
+.low{
+
+    color:#00ff9d;
+
+    border-color:#00ff9d;
+}
+
+.medium{
+
+    color:#ffd54d;
+
+    border-color:#ffd54d;
+}
+
+.high{
+
+    color:#ff9933;
+
+    border-color:#ff9933;
+}
+
+.extreme{
+
+    color:#ff4f4f;
+
+    border-color:#ff4f4f;
+}
+
+.stat{
+
+    margin-bottom:15px;
+}
+
+.stat-name{
+
+    margin-bottom:5px;
+}
+
+.bar{
+
+    height:20px;
+
+    background:#111;
+
+    border:1px solid #333;
+}
+
+.fill{
+
+    height:100%;
+}
+
+.nav-btn,
+.nav-btn:hover,
+.nav-btn:visited,
+.nav-btn:active{
+
+    text-decoration: none;
+}
+
+.path{
+    color: #777;
+}
+
+@media (max-width:768px){
+
+    .guide-container{
+
+        grid-template-columns:1fr;
+    }
+
+    .threat-list{
+
+        display:grid;
+
+        grid-template-columns:
+        repeat(2,1fr);
+
+        gap:10px;
+    }
+}

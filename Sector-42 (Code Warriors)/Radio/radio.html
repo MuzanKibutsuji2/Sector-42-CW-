@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Sector-42 | Radio</title>
+
+    <link rel="stylesheet"
+          href="/Dashboard/style.css">
+
+    <link rel="stylesheet"
+          href="radio.css">
+
+</head>
+
+<body>
+
+    <div class="sidebar">
+
+        <div class="logo">
+
+            <h2>SECTOR-42</h2>
+
+            <p>FOR HUMANITY</p>
+
+        </div>
+
+        <nav>
+
+            <a href="/Dashboard/index.html" class="nav-btn">
+                Dashboard
+            </a>
+
+            <a href="/Guide/guide.html" class="nav-btn">
+                Guide
+            </a>
+
+            <a href="/Survivors/survivors.html" class="nav-btn">
+                Survivors
+            </a>
+
+            <a href="/Resources/resources.html" class="nav-btn">
+                Resources
+            </a>
+
+            <a href="/Threats/threats.html" class="nav-btn">
+                Threats
+            </a>
+
+            <a href="/Missions/missions.html" class="nav-btn">
+                Missions
+            </a>
+
+            <a href="/Radio/radio.html"
+               class="nav-btn active">
+                Radio
+            </a>
+
+        </nav>
+
+        <div class="build-info">
+
+            BUILD 07.9
+
+            <br>
+
+            SYSTEM INTEGRITY:
+
+            <span class="integrity-ok">
+
+                OK
+
+            </span>
+
+        </div>
+
+    </div>
+
+    <main>
+
+        <div class="topbar">
+
+            <div>
+
+                <div class="path">
+
+                    SECTOR-42 // MODULE
+
+                </div>
+
+                <h1>
+
+                    RADIO NETWORK
+
+                </h1>
+
+                <p>
+
+                    Long-range communications & distress monitoring
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="radio-panel">
+
+            <div class="panel-header">
+
+                GLOBAL COMMUNICATION FEED
+
+            </div>
+
+            <div id="radioFeed">
+
+            </div>
+
+            <div class="chat-input">
+
+                <input type="text"
+                       id="messageInput"
+                       placeholder="Transmit message...">
+
+                <button onclick="sendMessage()">
+
+                    SEND
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="radio.js"></script>
+
+</body>
+
+</html>

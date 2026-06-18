@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Sector-42 | Survivors
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="/Dashboard/style.css">
+
+    <link
+        rel="stylesheet"
+        href="survivors.css">
+
+</head>
+
+<body>
+    
+    <div id="registerModal" class="modal-overlay">
+
+    <div class="modal">
+
+        <h2>REGISTER SURVIVOR</h2>
+
+        <input
+            id="newCallsign"
+            placeholder="Callsign">
+
+        <input
+            id="newName"
+            placeholder="Name">
+
+        <input
+            id="newRole"
+            placeholder="Role">
+
+        <input
+            id="newLocation"
+            placeholder="Location">
+
+        <input
+            id="newSkills"
+            placeholder="Skills">
+
+        <select id="newHealth">
+
+            <option value="Healthy">
+                Healthy
+            </option>
+
+            <option value="Injured">
+                Injured
+            </option>
+
+            <option value="Infected">
+                Infected
+            </option>
+
+        </select>
+
+        <div class="modal-buttons">
+
+            <button id="saveSurvivor">
+
+                REGISTER
+
+            </button>
+
+            <button
+                onclick="closeRegister()">
+
+                CANCEL
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+    <div class="sidebar">
+
+        <div class="logo">
+
+            <h2>SECTOR-42</h2>
+
+            <p>FOR HUMANITY</p>
+
+        </div>
+
+            <div class="build-info">
+
+        BUILD 07.9
+
+        <br>
+
+        SYSTEM INTEGRITY:
+        <span class="integrity-ok">
+
+            OK
+
+        </span>
+
+    </div>
+
+        <nav>
+
+            <a
+                href="/Dashboard/index.html"
+                class="nav-btn">
+
+                Dashboard
+
+            </a>
+
+            <a
+                href="/Guide/guide.html"
+                class="nav-btn">
+
+                Guide
+
+            </a>
+
+            <a
+                href="/Survivors/survivors.html"
+                class="nav-btn active">
+
+                Survivors
+
+            </a>
+
+            <a
+                href="/Resources/resources.html"
+                class="nav-btn">
+
+                Resources
+
+            </a>
+
+            <a
+                href="/Threats/threats.html"
+                class="nav-btn">
+
+                Threats
+
+            </a>
+
+            <a
+                href="/Missions/missions.html"
+                class="nav-btn">
+
+                Missions
+
+            </a>
+
+            <a
+                href="/Radio/radio.html"
+                class="nav-btn">
+
+                Radio
+
+            </a>
+
+        </nav>
+
+    </div>
+
+    <main>
+
+        <header class="topbar">
+
+            <div>
+
+                <div class="path">
+                    SECTOR-42 // MODULE
+                </div>
+
+                <h1>
+                    SURVIVOR ROSTER
+                </h1>
+
+                <p id="survivorCount">
+                    6 colonists on record
+                </p>
+
+            </div>
+
+            <button id="registerBtn">
+
+                + REGISTER
+
+            </button>
+
+        </header>
+
+        <div class="roster-panel">
+
+            <div class="manifest">
+
+                MANIFEST
+
+            </div>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>CALLSIGN</th>
+                        <th>NAME</th>
+                        <th>ROLE</th>
+                        <th>HEALTH</th>
+                        <th>LOCATION</th>
+                        <th>SKILLS</th>
+                        <th>ACTIONS</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="rosterBody">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+    <script src="survivors.js"></script>
+    <div id="modalOverlay" class="modal-overlay">
+
+    <div class="modal">
+
+        <h2 id="modalTitle">
+            Survivor
+        </h2>
+
+        <div id="modalContent">
+
+        </div>
+
+        <button onclick="closeModal()">
+            CLOSE
+        </button>
+
+    </div>
+
+</div>
+
+
+<div id="registerModal" class="modal-overlay">
+
+    <div class="modal">
+
+        <h2>
+            REGISTER SURVIVOR
+        </h2>
+
+        <input
+            id="newName"
+            placeholder="Name">
+
+        <input
+            id="newRole"
+            placeholder="Role">
+
+        <button id="saveSurvivor">
+
+            REGISTER
+
+        </button>
+
+        <button onclick="closeRegister()">
+
+            CANCEL
+
+        </button>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>

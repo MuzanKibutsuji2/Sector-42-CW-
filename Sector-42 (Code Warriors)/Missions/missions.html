@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Sector-42 | Missions</title>
+
+    <link rel="stylesheet"
+          href="/Dashboard/style.css">
+
+    <link rel="stylesheet"
+          href="missions.css">
+
+</head>
+
+<body>
+
+    <div class="sidebar">
+
+        <div class="logo">
+
+            <h2>SECTOR-42</h2>
+
+            <p>FOR HUMANITY</p>
+
+        </div>
+
+        <nav>
+
+            <a href="/Dashboard/index.html"
+               class="nav-btn">
+                Dashboard
+            </a>
+
+            <a href="/Guide/guide.html"
+               class="nav-btn">
+                Guide
+            </a>
+
+            <a href="/Survivors/survivors.html"
+               class="nav-btn">
+                Survivors
+            </a>
+
+            <a href="/Resources/resources.html"
+               class="nav-btn">
+                Resources
+            </a>
+
+            <a href="/Threats/threats.html"
+               class="nav-btn">
+                Threats
+            </a>
+
+            <a href="/Missions/missions.html"
+               class="nav-btn active">
+                Missions
+            </a>
+
+            <a href="/Radio/radio.html"
+               class="nav-btn">
+                Radio
+            </a>
+
+        </nav>
+
+        <div class="build-info">
+
+            BUILD 07.9
+
+            <br>
+
+            SYSTEM INTEGRITY:
+
+            <span class="integrity-ok">
+
+                OK
+
+            </span>
+
+        </div>
+
+    </div>
+
+    <main>
+
+        <div class="topbar">
+
+            <div>
+
+                <div class="path">
+
+                    SECTOR-42 // MODULE
+
+                </div>
+
+                <h1>
+
+                    MISSION MANAGEMENT
+
+                </h1>
+
+                <p>
+
+                    Manage current colony missions
+
+                </p>
+
+            </div>
+
+            <button id="newMissionBtn"
+                    onclick="openMissionModal()">
+
+                + NEW MISSION
+
+            </button>
+
+        </div>
+
+        <div id="missionList">
+
+        </div>
+
+    </main>
+
+    <div id="missionModal"
+         class="modal-overlay">
+
+        <div class="modal">
+
+            <h2>
+
+                CREATE MISSION
+
+            </h2>
+
+            <input type="text"
+                   id="missionName"
+                   placeholder="Mission Name">
+
+            <input type="text"
+                   id="missionLocation"
+                   placeholder="Location">
+
+            <select id="missionThreat">
+
+                <option>Low</option>
+
+                <option>Medium</option>
+
+                <option>High</option>
+
+                <option>Extreme</option>
+
+            </select>
+
+            <input type="text"
+                   id="missionRequirements"
+                   placeholder="Requirements">
+
+            <input type="text"
+                   id="missionReward"
+                   placeholder="Reward">
+
+            <div class="modal-buttons">
+
+                <button onclick="addMission()">
+
+                    CREATE
+
+                </button>
+
+                <button onclick="closeMissionModal()">
+
+                    CANCEL
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="missions.js"></script>
+
+</body>
+
+</html>

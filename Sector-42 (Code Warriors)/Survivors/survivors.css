@@ -1,0 +1,310 @@
+main{
+    flex:1;
+    padding:20px;
+}
+
+.path{
+    color:#666;
+    font-size:12px;
+    letter-spacing:2px;
+    text-decoration: none;
+}
+
+.nav-btn,
+.nav-btn:hover,
+.nav-btn:visited,
+.nav-btn:active{
+
+    text-decoration: none;
+}
+
+.topbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    margin-bottom:20px;
+    text-decoration: none;
+}
+
+.topbar h1{
+    font-size:42px;
+    margin:10px 0;
+    text-decoration: none;
+}
+
+.topbar p{
+    color:#777;
+    text-decoration: none;
+}
+
+#registerBtn{
+
+    background:none;
+
+    color:#ffb347;
+
+    border:1px solid #ffb347;
+
+    padding:10px 20px;
+
+    cursor:pointer;
+}
+
+.roster-panel{
+
+    border:1px solid #1b1b1b;
+
+    background:#090909;
+}
+
+.manifest{
+
+    color:#777;
+
+    padding:15px;
+
+    border-bottom:1px solid #1b1b1b;
+}
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+}
+
+th{
+
+    text-align:left;
+
+    color:#666;
+
+    padding:14px;
+}
+
+td{
+
+    padding:14px;
+
+    border-top:1px solid #111;
+}
+
+.callsign{
+
+    color:#ffb347;
+}
+
+.status{
+
+    padding:4px 10px;
+
+    border:1px solid;
+
+    display:inline-block;
+
+    font-size:12px;
+}
+
+.healthy{
+
+    color:#00ff9d;
+
+    border-color:#00ff9d;
+}
+
+.injured{
+
+    color:#ffc93d;
+
+    border-color:#ffc93d;
+}
+
+.infected{
+
+    color:#ff4f4f;
+
+    border-color:#ff4f4f;
+}
+
+.action-btn{
+
+    background:none;
+
+    border:1px solid #333;
+
+    color:#aaa;
+
+    cursor:pointer;
+
+    padding:4px 10px;
+}
+
+.action-btn:hover{
+
+    border-color:#ffb347;
+
+    color:#ffb347;
+}
+
+.action-buttons{
+
+    display:flex;
+
+    gap:8px;
+}
+
+.icon-btn{
+
+    width:28px;
+
+    height:28px;
+
+    border:1px solid #333;
+
+    background:none;
+
+    color:#aaa;
+
+    cursor:pointer;
+}
+
+.icon-btn:hover{
+
+    border-color:#ffb347;
+
+    color:#ffb347;
+}
+
+.icon-btn.danger:hover{
+
+    border-color:#ff4444;
+
+    color:#ff4444;
+}
+
+.modal-overlay{
+
+    display:none;
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.85);
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:1000;
+}
+
+.modal{
+
+    background:#0a0a0a;
+
+    border:1px solid #333;
+
+    padding:25px;
+
+    width:450px;
+}
+
+.modal h2{
+
+    margin-bottom:20px;
+}
+
+.modal input{
+
+    width:100%;
+
+    background:#111;
+
+    border:1px solid #222;
+
+    color:white;
+
+    padding:10px;
+
+    margin-bottom:10px;
+}
+
+.modal button{
+
+    margin-top:10px;
+}
+
+.modal select{
+
+    width:100%;
+
+    background:#111;
+
+    color:white;
+
+    border:1px solid #333;
+
+    padding:10px;
+
+    margin-bottom:10px;
+}
+
+.modal-buttons{
+
+    display:flex;
+
+    gap:10px;
+}
+
+.build-info{
+
+    position:absolute;
+
+    bottom:20px;
+
+    left:20px;
+
+    color:#555;
+
+    font-size:14px;
+
+    letter-spacing:1px;
+}
+
+.build-info{
+
+    color:#00ff9d;
+}
+
+@media (max-width:768px){
+
+    .topbar{
+
+        flex-direction:column;
+
+        gap:15px;
+    }
+
+    .topbar h1{
+
+        font-size:28px;
+    }
+
+    .action-buttons{
+
+        flex-direction:column;
+    }
+
+    table{
+
+        display:block;
+
+        overflow-x:auto;
+    }
+
+    .modal{
+
+        width:95%;
+    }
+}

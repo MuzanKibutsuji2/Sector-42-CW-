@@ -1,0 +1,361 @@
+/* ========================= */
+/* TOP SECTION */
+/* ========================= */
+
+.path{
+
+    color:#666;
+
+    font-size:12px;
+
+    letter-spacing:2px;
+}
+
+.topbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    margin-bottom:20px;
+}
+
+.topbar h1{
+
+    font-size:42px;
+
+    margin:10px 0;
+}
+
+.topbar p{
+
+    color:#777;
+}
+
+#newMissionBtn{
+
+    background:none;
+
+    color:#ffb347;
+
+    border:1px solid #ffb347;
+
+    padding:10px 20px;
+
+    cursor:pointer;
+
+    font-family:inherit;
+}
+
+#newMissionBtn:hover{
+
+    background:#ffb347;
+
+    color:black;
+}
+
+#missionList{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(
+        auto-fill,
+        minmax(350px,1fr)
+    );
+
+    gap:15px;
+
+    margin-top:20px;
+}
+
+.mission-card{
+
+    background:#090909;
+
+    border:1px solid #222;
+
+    padding:20px;
+
+    transition:.2s;
+}
+
+.mission-card:hover{
+
+    border-color:#ffb347;
+}
+
+.mission-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:15px;
+}
+
+.mission-top h3{
+
+    color:#ffb347;
+
+    margin:0;
+}
+
+.mission-card p{
+
+    margin-bottom:10px;
+
+    color:#ccc;
+}
+
+.mission-card strong{
+
+    color:white;
+}
+
+.badge{
+
+    padding:4px 10px;
+
+    border:1px solid;
+
+    font-size:12px;
+
+    font-weight:bold;
+}
+
+.badge.green{
+
+    color:#00ff9d;
+
+    border-color:#00ff9d;
+}
+
+.badge.yellow{
+
+    color:#ffd54d;
+
+    border-color:#ffd54d;
+}
+
+.badge.orange{
+
+    color:#ff9933;
+
+    border-color:#ff9933;
+}
+
+.badge.red{
+
+    color:#ff4f4f;
+
+    border-color:#ff4f4f;
+}
+
+.mission-buttons{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:8px;
+
+    margin-top:15px;
+}
+
+.mission-buttons button{
+
+    flex:1;
+
+    min-width:90px;
+
+    background:none;
+
+    border:1px solid #333;
+
+    color:#aaa;
+
+    padding:8px;
+
+    cursor:pointer;
+
+    font-family:inherit;
+
+    transition:.2s;
+}
+
+.mission-buttons button:hover{
+
+    border-color:#ffb347;
+
+    color:#ffb347;
+}
+
+.mission-buttons .danger{
+
+    border-color:#ff4f4f;
+
+    color:#ff4f4f;
+}
+
+.mission-buttons .danger:hover{
+
+    background:#ff4f4f;
+
+    color:white;
+}
+
+.empty{
+
+    text-align:center;
+
+    color:#666;
+
+    padding:40px;
+
+    border:1px solid #222;
+
+    background:#090909;
+}
+
+.modal-overlay{
+
+    display:none;
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.85);
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:1000;
+}
+
+.modal{
+
+    background:#0a0a0a;
+
+    border:1px solid #333;
+
+    padding:25px;
+
+    width:450px;
+}
+
+.modal h2{
+
+    margin-bottom:20px;
+
+    color:#ffb347;
+}
+
+.modal input{
+
+    width:100%;
+
+    background:#111;
+
+    border:1px solid #222;
+
+    color:white;
+
+    padding:10px;
+
+    margin-bottom:10px;
+
+    font-family:inherit;
+}
+
+.modal select{
+
+    width:100%;
+
+    background:#111;
+
+    border:1px solid #222;
+
+    color:white;
+
+    padding:10px;
+
+    margin-bottom:10px;
+
+    font-family:inherit;
+}
+
+.modal input:focus,
+.modal select:focus{
+
+    outline:none;
+
+    border-color:#ffb347;
+}
+
+.modal-buttons{
+
+    display:flex;
+
+    gap:10px;
+
+    margin-top:10px;
+}
+
+.modal-buttons button{
+
+    flex:1;
+
+    background:none;
+
+    border:1px solid #333;
+
+    color:white;
+
+    padding:10px;
+
+    cursor:pointer;
+
+    font-family:inherit;
+}
+
+.modal-buttons button:hover{
+
+    border-color:#ffb347;
+
+    color:#ffb347;
+}
+
+.nav-btn,
+.nav-btn:hover,
+.nav-btn:visited,
+.nav-btn:active{
+
+    text-decoration: none;
+}
+
+@media (max-width:768px){
+
+    #missionList{
+
+        grid-template-columns:1fr;
+    }
+
+    .topbar{
+
+        flex-direction:column;
+
+        gap:15px;
+    }
+
+    .modal{
+
+        width:95%;
+    }
+}

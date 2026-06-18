@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="UTF-8">
+
+    <title>Sector-42 | Guide</title>
+
+    <link rel="stylesheet" href="/Dashboard/style.css">
+    <link rel="stylesheet" href="guide.css">
+
+</head>
+
+<body>
+
+    <div class="sidebar">
+
+        <div class="logo">
+
+            <h2>SECTOR-42</h2>
+            <p>FOR HUMANITY</p>
+
+        </div>
+
+        <nav>
+
+            <a href="/Dashboard/index.html" class="nav-btn">
+                Dashboard
+            </a>
+
+            <a href="/Guide/guide.html" class="nav-btn active">
+                Guide
+            </a>
+
+            <a href="/Survivors/survivors.html" class="nav-btn">
+                Survivors
+            </a>
+
+            <a href="/Resources/resources.html" class="nav-btn">
+                Resources
+            </a>
+
+            <a href="/Threats/threats.html" class="nav-btn">
+                Threats
+            </a>
+
+            <a href="/Missions/missions.html" class="nav-btn">
+                Missions
+            </a>
+
+            <a href="/Radio/radio.html" class="nav-btn">
+                Radio
+            </a>
+
+        </nav>
+
+        <div class="build-info">
+
+            BUILD 07.9
+
+            <br>
+
+            SYSTEM INTEGRITY:
+            <span class="ok">
+
+                OK
+
+            </span>
+
+        </div>
+
+    </div>
+
+    <main>
+
+        <div class="title">
+
+            <div class="path">
+
+                SECTOR-42 // MODULE
+
+            </div>
+
+            <h1>
+
+                SURVIVAL GUIDE
+
+            </h1>
+
+            <p>
+
+                Database for all known threats
+
+            </p>
+
+        </div>
+
+        <div class="guide-container">
+
+            <div class="threat-list">
+
+                <div class="panel-header">
+
+                    THREAT DATABASE
+
+                </div>
+
+                <button class="threat-btn active"
+                        onclick="loadZombie(0)">
+                    WALKER
+                </button>
+
+                <button class="threat-btn"
+                        onclick="loadZombie(1)">
+                    RUNNER
+                </button>
+
+                <button class="threat-btn"
+                        onclick="loadZombie(2)">
+                    BRUTE
+                </button>
+
+                <button class="threat-btn"
+                        onclick="loadZombie(3)">
+                    SPITTER
+                </button>
+
+                <button class="threat-btn"
+                        onclick="loadZombie(4)">
+                    NECROMORPH
+                </button>
+
+            </div>
+
+            <div class="guide-panel">
+
+                <h2 id="name"></h2>
+
+                <div id="danger"></div>
+
+                <div class="section">
+
+                    <h3>IDENTIFICATION</h3>
+
+                    <p id="identify"></p>
+
+                </div>
+
+                <div class="section">
+
+                    <h3>COMBAT PROCEDURE</h3>
+
+                    <p id="combat"></p>
+
+                </div>
+
+                <div class="section">
+
+                    <h3>STATISTICS</h3>
+
+                    <div id="stats"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="guide.js"></script>
+
+</body>
+
+</html>
